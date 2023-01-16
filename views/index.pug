@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div
+    a.expandable(href="#") Upload File - Expand
+    .drag-area
+      .icon
+        i.fas.fa-cloud-upload-alt
+      header Drop File Here
+      span OR
+      button Browse
+      input#file(name="file", type="file", hidden)
+
+      #ripple.lds-ripple
+        div
+        div
+
+  #result_block.hidden
+    #result
+
+  #sd_table_div.datatable-container
+
+  #source
+    a(href="https://github.com/th3geekguy/klabautermann2/") source
