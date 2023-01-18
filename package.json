@@ -4,9 +4,7 @@
   "private": true,
   "homepage": "https://th3geekguy.github.com/klabautermann2",
   "scripts": {
-    "start": "node ./bin/www && bash ./build.sh",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "node ./bin/www && bash build.sh"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
