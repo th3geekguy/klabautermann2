@@ -2,8 +2,11 @@
   "name": "klabautermann2",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://th3geekguy.github.com/klabautermann2",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www && bash ./build.sh",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
